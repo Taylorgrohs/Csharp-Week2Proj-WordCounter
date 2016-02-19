@@ -13,7 +13,7 @@ namespace RepeatCounter
 
       foreach (string i in sentence)
       {
-        if (word == i)
+        if (i.Contains(word))
         {
         repeatNum = repeatNum + 1;
         }
