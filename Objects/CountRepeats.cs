@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace RepeatCounter
+namespace Repeat
 {
-  public class Sentence
+  public class RepeatCounter
   {
-    public string Count(string wordToCount, string sentenceToCheck)
+    public string CountRepeats(string wordToCount, string sentenceToCheck)
     {
       string word = wordToCount.ToLower();
       string[] sentence = sentenceToCheck.ToLower().Split(' ');

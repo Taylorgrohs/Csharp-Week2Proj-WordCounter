@@ -1,6 +1,6 @@
 using Nancy;
 using System;
-using RepeatCounter;
+using Repeat;
 
 namespace GetCounting
 {
@@ -14,8 +14,8 @@ namespace GetCounting
       };
       Post["/result"] = _ =>
       {
-        Sentence newSentence = new Sentence();
-        string results = newSentence.Count(Request.Form["word"], Request.Form["sentence"]);
+        RepeatCounter newSentence = new RepeatCounter();
+        string results = newSentence.CountRepeats(Request.Form["word"], Request.Form["sentence"]);
         return View["result.cshtml", results];
       };
     }

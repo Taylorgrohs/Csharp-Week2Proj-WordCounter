@@ -2,33 +2,33 @@ using Xunit;
 using System.Collections.Generic;
 using System;
 
-namespace RepeatCounter
+namespace Repeat
 {
-  public class RepeatCountTest
+  public class RepeatCounterTest
   {
     [Fact]
-    public void Count_Hello_Equals_1()
+    public void CountRepeats_Hello_Equals_1()
     {
-      Sentence newSentence = new Sentence();
-      Assert.Equal("hello was repeated in hello 1 time(s).", newSentence.Count("hello", "hello"));
+      RepeatCounter newSentence = new RepeatCounter();
+      Assert.Equal("hello was repeated in hello 1 time(s).", newSentence.CountRepeats("hello", "hello"));
     }
     [Fact]
-    public void Count_Hello_Equals_Lowercase()
+    public void CountRepeats_Hello_Equals_Lowercase()
     {
-      Sentence newSentence = new Sentence();
-      Assert.Equal("hello was repeated in HeLLo 1 time(s).", newSentence.Count("hello", "HeLLo"));
+      RepeatCounter newSentence = new RepeatCounter();
+      Assert.Equal("hello was repeated in HeLLo 1 time(s).", newSentence.CountRepeats("hello", "HeLLo"));
     }
     [Fact]
-    public void Count_You_Equals_Sentence()
+    public void CountRepeats_You_Equals_RepeatCounter()
     {
-      Sentence newSentence = new Sentence();
-      Assert.Equal("You was repeated in you You yOU YOU 4 time(s).", newSentence.Count("You", "you You yOU YOU"));
+      RepeatCounter newSentence = new RepeatCounter();
+      Assert.Equal("You was repeated in you You yOU YOU 4 time(s).", newSentence.CountRepeats("You", "you You yOU YOU"));
     }
     [Fact]
-    public void Count_hello_Equals_comma()
+    public void CountRepeats_hello_Equals_comma()
     {
-      Sentence newSentence = new Sentence();
-      Assert.Equal("hello was repeated in hello, hello! 2 time(s).", newSentence.Count("hello", "hello, hello!"));
+      RepeatCounter newSentence = new RepeatCounter();
+      Assert.Equal("hello was repeated in hello, hello! 2 time(s).", newSentence.CountRepeats("hello", "hello, hello!"));
     }
   }
 }
