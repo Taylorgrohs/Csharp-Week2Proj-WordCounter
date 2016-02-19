@@ -1,3 +1,11 @@
 .jumbotron {
   text-align: center;
 }
+
+body {
+  text-align: center;
+}
+
+.check {
+  margin-top: 25px;
+}
