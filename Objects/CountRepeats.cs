@@ -8,7 +8,7 @@ namespace RepeatCounter
     public string Count(string wordToCount, string sentenceToCheck)
     {
       string word = wordToCount.ToLower();
-      string[] sentence = sentenceToCheck.Split(' ');
+      string[] sentence = sentenceToCheck.ToLower().Split(' ');
       int repeatNum = 0;
 
       foreach (string i in sentence)
