@@ -1,0 +1,5 @@
+it checks to make sure a word is equal to the same word / input = "hello" / word to check = "hello" / output = 1;
+
+it lowercases words to check incase of capital letters / input "hello" / word to check = "HeLLo" / output = 1;
+
+It counts the words and returns the number of times it finds a specific word / input = "hello world" / word to count = "hello"/ output = 1;
