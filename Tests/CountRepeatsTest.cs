@@ -18,5 +18,11 @@ namespace RepeatCounter
       Sentence newSentence = new Sentence();
       Assert.Equal("hello was repeated in HeLLo 1 time(s).", newSentence.Count("hello", "HeLLo"));
     }
+    [Fact]
+    public void Count_You_Equals_Sentence()
+    {
+      Sentence newSentence = new Sentence();
+      Assert.Equal("You was repeated in you You yOU YOU 4 time(s).", newSentence.Count("You", "you You yOU YOU"));
+    }
   }
 }
