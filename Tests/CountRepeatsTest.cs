@@ -24,5 +24,11 @@ namespace RepeatCounter
       Sentence newSentence = new Sentence();
       Assert.Equal("You was repeated in you You yOU YOU 4 time(s).", newSentence.Count("You", "you You yOU YOU"));
     }
+    [Fact]
+    public void Count_hello_Equals_comma()
+    {
+      Sentence newSentence = new Sentence();
+      Assert.Equal("hello was repeated in hello, hello! 2 time(s).", newSentence.Count("hello", "hello, hello!"));
+    }
   }
 }
