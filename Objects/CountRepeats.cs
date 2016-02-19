@@ -15,7 +15,7 @@ namespace RepeatCounter
       {
         if (word == i)
         {
-        repeatNum = repeatNum+2;
+        repeatNum = repeatNum+1;
         }
       }
       return wordToCount + " was repeated in " + sentenceToCheck + " " + repeatNum + " time(s).";
