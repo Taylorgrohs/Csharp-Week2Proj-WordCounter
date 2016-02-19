@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css">
+
+    <meta charset="utf-8">
+    <title>Repeat Counter</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Repeat Counter!</h1>
+    </div>
+
+    <div class="container">
+      <form action="/result" method="post">
+        <div class="container">
+          <label for="word">Add a word to look for in the sentence.</label>
+          <br>
+          <input type="text" name="word">
+        </div>
+        <div class="container">
+          <label for="sentence">Add a sentence to check for repeats.</label>
+          <br>
+          <input type="text" name="sentence" class="form-control">
+        </div>
+        <div class="container">
+          <button type="submit">Check</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
