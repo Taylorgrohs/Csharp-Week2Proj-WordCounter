@@ -13,6 +13,12 @@ namespace Repeat
       Assert.Equal("hello was repeated in hello 1 time(s).", newSentence.CountRepeats("hello", "hello"));
     }
     [Fact]
+    public void CountRepeats_Hello_noequal_hi()
+    {
+      RepeatCounter newSentence = new RepeatCounter();
+      Assert.Equal("hello was repeated in hi 0 time(s).", newSentence.CountRepeats("hello", "hi"));
+    }
+    [Fact]
     public void CountRepeats_Hello_Equals_Lowercase()
     {
       RepeatCounter newSentence = new RepeatCounter();
