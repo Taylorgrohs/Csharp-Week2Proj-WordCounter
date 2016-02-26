@@ -13,7 +13,7 @@ namespace Repeat
       int repeatNum = 0;
       foreach (string i in sentence)
       {
-        if (word == Regex.Replace(i, @"[^\w\s]", ""));
+        if (word == Regex.Replace(i, @"[^\w\s]", ""))
         {
         repeatNum = repeatNum + 1;
         }
