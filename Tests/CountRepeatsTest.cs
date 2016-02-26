@@ -19,6 +19,7 @@ namespace Repeat
       Assert.Equal("hello was repeated in hi 0 time(s).", newSentence.CountRepeats("hello", "hi"));
     }
     [Fact]
+
     public void Test_hello_helloworld()
     {
       RepeatCounter newSentence = new RepeatCounter();
@@ -28,7 +29,7 @@ namespace Repeat
     public void Test_he_hello()
     {
       RepeatCounter newSentence = new RepeatCounter();
-      Assert.Equal("he was repeated in hello 0 time(s).", newSentence.CountRepeats("he", "hello")); 
+      Assert.Equal("he was repeated in hello 0 time(s).", newSentence.CountRepeats("he", "hello"));
     }
     [Fact]
     public void CountRepeats_Hello_Equals_Lowercase()
